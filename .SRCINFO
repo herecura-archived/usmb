@@ -1,20 +1,20 @@
 pkgbase = usmb
 	pkgdesc = Mount SMB shares via fuse
-	pkgver = 20100212
-	pkgrel = 2
+	pkgver = 20100404
+	pkgrel = 1
 	url = http://www.ametros.net/code.html
 	arch = i686
 	arch = x86_64
 	license = GPL
 	depends = fuse
 	depends = smbclient
-	depends = heimdal
+	depends = krb5
 	depends = libldap
 	depends = libxml2
-	source = http://www.ametros.net/downloads/usmb-20100212.tar.gz
-	source = makefile-destdir.patch
-	md5sums = 3e90560718711ea23f95494bf2f00ec4
-	md5sums = c52aea929c0c29d817af45abc4fee71c
+	source = http://www.herecura.be/files/usmb-20100404.tar.gz
+	source = password.patch
+	md5sums = 0f50859276fc852b8afdb1bf19bf1e25
+	md5sums = 707f0889abc7ad7a41b45321ebaf36d4
 
 pkgname = usmb
 
