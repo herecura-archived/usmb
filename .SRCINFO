@@ -1,7 +1,7 @@
 pkgbase = usmb
 	pkgdesc = Mount SMB shares via fuse
 	pkgver = 20130204
-	pkgrel = 1
+	pkgrel = 2
 	url = http://www.ametros.net/code.html
 	arch = i686
 	arch = x86_64
