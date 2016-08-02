@@ -12,6 +12,11 @@ depends=('fuse' 'smbclient>=4' 'krb5' 'libldap' 'libxml2')
 source=("http://www.herecura.be/files/${pkgname}-${pkgver}.tar.gz")
 sha256sums=('c28851bf13cde7292d07cffce2cf4d216eb7e1e3239d3c7a0c7713e7d2375ca7')
 
+prepare() {
+    cd ${pkgname}
+    sed -e 's/_BSD_SOURCE/_DEFAULT_SOURCE/g' -i configure.ac
+}
+
 build() {
 	cd ${pkgname}
 	# automake
